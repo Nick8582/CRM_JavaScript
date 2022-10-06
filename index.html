@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CRM skb.</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
+<h1>Skb. CRM система</h1>
 <header class="header">
   <div class="header__container">
     <img src="./img/logo.svg" alt="Логотип компании" class="header__logo">
@@ -21,53 +22,51 @@
   <section class="table">
     <div class="container">
       <h2 class="table__title">Клиенты</h2>
-      <div class="table__data">
-        <div class="table__header">
-          <a href="#" class="table__header-col">
-            <span class="col__name">ID</span>
-            <span class="col__arrow"></span>
-          </a>
-          <a href="#" class="table__header-col">
-            <span class="col__name">Фамилия Имя Отчество</span>
-            <span class="col__arrow"></span>
-          </a>
-          <a href="#" class="table__header-col">
-            <span class="col__name">Дата и время создания</span>
-            <span class="col__arrow"></span>
-          </a>
-          <a href="#" class="table__header-col">
-            <span class="col__name">Последние изменения</span>
-            <span class="col__arrow"></span>
-          </a>
-          <a href="#" class="table__header-col">
-            <span class="col__name">Контакты</span>
-          </a>
-          <a href="#" class="table__header-col">
-            <span class="col__name">Действия</span>
-          </a>
-        </div>
-        <div class="table__main">
-          <div class="table__row">
-            <div class="table__col">
-              <span class="table__id">123455</span>
-            </div>
-            <div class="table__col">
-              <span class="table__name">Скворцов Денис Юрьевич</span>
-            </div>
-            <div class="table__col table__col-date">
-              <time datetime="2021-02-21 12:41" class="table__date">21.02.2021
-                <span class="table__time">12:41</span>
-              </time>
-            </div>
-            <div class="table__col table__col-date">
-              <span class="table__date">21.02.2021</span>
-              <span class="table__time">14:50</span>
-            </div>
-            <div class="table__col">123455</div>
-            <div class="table__col">123455</div>
-          </div>
-        </div>
-      </div>
+      <table class="table__content">
+        <thead>
+          <tr>
+            <th>
+              <div class=" id th-title-id">
+                <div class="table-clients-id">ID</div>
+                <div class="table-clients-id-img table-img-id"></div>
+              </div>
+            </th>
+            <th>
+              <div class="fio th-title">
+                <div class="table-clients-fio">Фамилия Имя Отчество</div>
+                <div class="table-clients-fio-img table-img"></div>
+              </div>
+            </th>
+            <th>
+              <div class="time-creation th-title">
+                <div class="table-time-creation">Дата и время создания</div>
+                <div class="table-time-creation-img table-img"></div>
+              </div>
+            </th>
+            <th>
+              <div class="time-change th-title">
+                <div class="table-time-change">Последние изменения</div>
+                <div class="table-time-change-img table-img"></div>
+              </div>
+            </th>
+            <th class="table-contact">Контакты </th>
+            <th class="table-change">Действия</th>
+          </tr>
+        </thead>
+        <tbody class="table__main">
+          <tr>
+            <td>123455</td>
+            <td>Скворцов Денис Юрьевич</td>
+            <td>21.02.2021 12:41</td>
+            <td>21.02.2021 14:50</td>
+            <td>1234</td>
+            <td>
+              <button type="button">Изменить</button>
+              <button type="button">Удалить</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 </main>
