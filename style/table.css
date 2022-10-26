@@ -8,11 +8,284 @@
   line-height: 33px;
   color: var(--black);
   letter-spacing: 0px;
+  margin-bottom: 20px;
 }
 
 .table__content {
-  width          : 100%;
-  margin-top     : 26px;
+  width: 100%;
   border-collapse: separate;
-  border-spacing : 0px 2px;
+  border-spacing: 0px 2px;
+  margin-bottom: 39px;
+}
+
+.th-title {
+  display: flex;
+}
+
+.table__title-name {
+  margin-right: 11px;
+}
+
+.table-img {
+  position: relative;
+  margin: auto 0;
+  height: 16px;
+  opacity: 0.7;
+  color: var(--purpure);
+}
+
+.table-img:before {
+  content: '';
+  left: -8px;
+  top: 2px;
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  transform: rotate(180deg);
+
+  opacity: .7;
+  background: url("../img/svg/arrow.svg");
+}
+
+.th-title.active > .table__title-name {
+  color: var(--purpure);
+
+}
+
+.th-title.active > .table-img:before,
+.th-title.active > .table-img {
+  opacity: 1;
+}
+
+.th-title.active > .table-img:before {
+  transform: rotate(0);
+  top: 3px;
+}
+
+.table__id {
+  width: 7%;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.table__fio {
+  width: 32%;
+  cursor: pointer;
+  padding-left: 19px;
+}
+
+.table__data-create {
+  width: 14%;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.table__data-edit {
+  width: 15%;
+  cursor: pointer;
+  padding-left: 18px;
+}
+
+.table__contact {
+  width: 14%;
+  padding-left: 13px;
+}
+
+.table__change {
+  width: 18%;
+  padding-left: 7px;
+  padding-right: 6px;
+}
+
+.id__person {
+  color: var(--text-grey);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.data-create__date,
+.data-edit__date {
+  margin-right: 5px;
+}
+
+.data-create__time,
+.data-edit__time {
+  color: var(--text-grey);
+}
+
+.contact__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 110px;
+  max-height: 42px;
+  height: 100%;
+  align-content: space-between;
+}
+
+.contact__item {
+  margin-right: 7px;
+}
+
+.contact__list.active > .contact__item {
+  margin-bottom: 8px;
+}
+
+.contact__item:nth-child(n+6) {
+  margin-bottom: 0;
+}
+
+.contact__link {
+  display: block;
+  height: 16px;
+  width: 16px;
+  line-height: 1;
+}
+
+.contact__item:nth-child(5n) {
+  margin-right: 0;
+}
+
+.change__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.change__edit,
+.change__delete {
+  border: none;
+  background: none;
+  padding: 10px 14px;
+  position: relative;
+  cursor: pointer;
+  transition: .4s ease color;
+}
+
+.change__edit:hover {
+  color: var(--purpure);
+}
+
+.change__edit:before {
+  content: url("../img/svg/edit.svg");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -1px;
+}
+
+.change__edit:hover.change__edit:before {
+  content: url("../img/svg/load-edit.svg");
+  left: -2px;
+  top: 9px;
+  transform-origin: center;
+  animation: rotate 2s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.change__delete:hover {
+  color: var(--red);
+}
+
+.change__delete:before {
+  content: url("../img/svg/delete.svg");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -1px;
+}
+
+.change__delete:hover.change__delete:before {
+  content: url("../img/svg/load-delete.svg");
+  left: -2px;
+  top: 9px;
+  transform-origin: center;
+  animation: rotate 2s ease-in-out infinite;
+}
+
+.table__btn-add {
+  margin: 0 auto;
+  background: none;
+  border: 1px solid var(--purpure);
+  color: var(--purpure);
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 600;
+  font-family: 'Open Sans';
+  padding: 12px 25px;
+  transition: .3s ease-in-out background-color;
+}
+
+.table__btn-add:hover {
+  background-color: var(--purpure-hover);
+  color: var(--white);
+  transition: .3s ease-in-out color;
+}
+
+.table__btn-add:active {
+  background-color: var(--purpure);
+  color: var(--white);
+  transition: .3s ease-in-out color;
+}
+
+.table__btn-add:disabled {
+  color: var(--border-grey);
+  border: 1px solid var(--border-grey);
+}
+
+.svg__add-person {
+  margin-right: 5px;
+  fill: currentColor;
+}
+
+@media (max-width: 1120px) {
+  .table__title {
+    margin-bottom: 8px;
+  }
+
+  th {
+    padding-bottom: 6px;
+  }
+
+  .table__fio {
+    width: 25%;
+    padding-left: 21px;
+    padding-right: 10px;
+  }
+
+  .table__data-edit {
+    padding-left: 28px;
+  }
+
+  .table__contact {
+    width: 17%;
+    padding-left: 26px;
+  }
+
+  .table__change {
+    width: 22%;
+    padding-left: 10px;
+  }
+
+  th.table__id,
+  th.table__fio,
+  th.table__contact,
+  th.table__change {
+    padding-top: 17px;
+  }
+
+  .data-create__date {
+    margin-right: 7px;
+  }
 }

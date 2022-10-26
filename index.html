@@ -24,51 +24,354 @@
       <h2 class="table__title">Клиенты</h2>
       <table class="table__content">
         <thead>
-          <tr>
-            <th>
-              <div class=" id th-title-id">
-                <div class="table-clients-id">ID</div>
-                <div class="table-clients-id-img table-img-id"></div>
-              </div>
-            </th>
-            <th>
-              <div class="fio th-title">
-                <div class="table-clients-fio">Фамилия Имя Отчество</div>
-                <div class="table-clients-fio-img table-img"></div>
-              </div>
-            </th>
-            <th>
-              <div class="time-creation th-title">
-                <div class="table-time-creation">Дата и время создания</div>
-                <div class="table-time-creation-img table-img"></div>
-              </div>
-            </th>
-            <th>
-              <div class="time-change th-title">
-                <div class="table-time-change">Последние изменения</div>
-                <div class="table-time-change-img table-img"></div>
-              </div>
-            </th>
-            <th class="table-contact">Контакты </th>
-            <th class="table-change">Действия</th>
-          </tr>
+        <tr>
+          <th class="table__id">
+            <div class="id th-title active">
+              <div class="table-clients-id table__title-name">ID</div>
+              <div class="table-clients-id-img table-img"></div>
+            </div>
+          </th>
+          <th class="table__fio">
+            <div class="fio th-title">
+              <div class="table-clients-fio table__title-name">Фамилия Имя Отчество</div>
+              <div class="table-clients-fio-img table-img">А-Я</div>
+            </div>
+          </th>
+          <th class="table__data-create">
+            <div class="time-creation th-title">
+              <div class="table-time-creation table__title-name">Дата и время создания</div>
+              <div class="table-time-creation-img table-img"></div>
+            </div>
+          </th>
+          <th class="table__data-edit">
+            <div class="time-change th-title">
+              <div class="table-time-change table__title-name">Последние изменения</div>
+              <div class="table-time-change-img table-img"></div>
+            </div>
+          </th>
+          <th class="table__contact">Контакты</th>
+          <th class="table__change">Действия</th>
+        </tr>
         </thead>
         <tbody class="table__main">
-          <tr>
-            <td>123455</td>
-            <td>Скворцов Денис Юрьевич</td>
-            <td>21.02.2021 12:41</td>
-            <td>21.02.2021 14:50</td>
-            <td>1234</td>
-            <td>
-              <button type="button">Изменить</button>
-              <button type="button">Удалить</button>
-            </td>
-          </tr>
+        <tr>
+          <td class="table__id">
+            <div class="id__person">
+              123455
+            </div>
+          </td>
+          <td class="table__fio">
+            <div class="fio__person">
+              Скворцов Денис Юрьевич
+            </div>
+          </td>
+          <td class="table__data-create">
+            <span class="data-create__date">
+              21.02.2021
+            </span>
+            <span class="data-create__time">
+              12:41
+            </span>
+          </td>
+          <td class="table__data-edit">
+            <span class="data-edit__date">21.02.2021</span>
+            <span class="data-edit__time">14:50</span>
+          </td>
+          <td class="table__contact">
+            <ul class="contact__list active">
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/vk.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/fb.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/phone.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/email.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/contact.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/contact.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/contact.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/contact.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/contact.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/contact.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </td>
+          <td class="table__change">
+            <div class="change__container">
+              <button type="button" class="change__edit">Изменить</button>
+              <button type="button" class="change__delete">Удалить</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__id">
+            <div class="id__person">
+              123456
+            </div>
+          </td>
+          <td class="table__fio">
+            <div class="fio__person">
+              Куприянов Арсений Валерьевич
+            </div>
+          </td>
+          <td class="table__data-create">
+            <span class="data-create__date">
+              28.01.2021
+            </span>
+            <span class="data-create__time">
+              16:40
+            </span>
+          </td>
+          <td class="table__data-edit">
+            <span class="data-edit__date">02.02.2021</span>
+            <span class="data-edit__time">17:01</span>
+          </td>
+          <td class="table__contact">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/phone.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/email.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </td>
+          <td class="table__change">
+            <div class="change__container">
+              <button type="button" class="change__edit">Изменить</button>
+              <button type="button" class="change__delete">Удалить</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__id">
+            <div class="id__person">
+              123457
+            </div>
+          </td>
+          <td class="table__fio">
+            <div class="fio__person">
+              Константинопольская Людмила Александровна
+            </div>
+          </td>
+          <td class="table__data-create">
+            <span class="data-create__date">
+              20.01.2021
+            </span>
+            <span class="data-create__time">
+              14:01
+            </span>
+          </td>
+          <td class="table__data-edit">
+            <span class="data-edit__date">21.01.2021</span>
+            <span class="data-edit__time">14:59</span>
+          </td>
+          <td class="table__contact">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/fb.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/phone.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/email.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </td>
+          <td class="table__change">
+            <div class="change__container">
+              <button type="button" class="change__edit">Изменить</button>
+              <button type="button" class="change__delete">Удалить</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__id">
+            <div class="id__person">
+              123458
+            </div>
+          </td>
+          <td class="table__fio">
+            <div class="fio__person">
+              Дмитриевский Олег Алексеевич
+            </div>
+          </td>
+          <td class="table__data-create">
+            <span class="data-create__date">
+              14.01.2021
+            </span>
+            <span class="data-create__time">
+              16:50
+            </span>
+          </td>
+          <td class="table__data-edit">
+            <span class="data-edit__date">18.01.2021</span>
+            <span class="data-edit__time">16:55</span>
+          </td>
+          <td class="table__contact">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/phone.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </td>
+          <td class="table__change">
+            <div class="change__container">
+              <button type="button" class="change__edit">Изменить</button>
+              <button type="button" class="change__delete">Удалить</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="table__id">
+            <div class="id__person">
+              123459
+            </div>
+          </td>
+          <td class="table__fio">
+            <div class="fio__person">
+              Александрова Татьяна Павловна
+            </div>
+          </td>
+          <td class="table__data-create">
+            <span class="data-create__date">
+              11.01.2021
+            </span>
+            <span class="data-create__time">
+              12:45
+            </span>
+          </td>
+          <td class="table__data-edit">
+            <span class="data-edit__date">11.01.2021</span>
+            <span class="data-edit__time">14:11</span>
+          </td>
+          <td class="table__contact">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/fb.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/phone.svg" alt="">
+                </a>
+              </li>
+              <li class="contact__item">
+                <a href="#" class="contact__link">
+                  <img src="./img/svg/email.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </td>
+          <td class="table__change">
+            <div class="change__container">
+              <button type="button" class="change__edit">Изменить</button>
+              <button type="button" class="change__delete">Удалить</button>
+            </div>
+          </td>
+        </tr>
         </tbody>
       </table>
+      <button class="table__btn-add">
+        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="svg__add-person" d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z" />
+        </svg>
+
+        Добавить клиента
+      </button>
     </div>
   </section>
 </main>
+
+<section class="modal active">
+  <form class="modal__window">
+    <div class="modal__header">
+      <h2 class="modal__name">Изменить данные</h2>
+      <span class="modal__id">ID: 123458</span>
+      <div class="modal__close">
+        <button class="modal__close-btn"></button>
+      </div>
+    </div>
+    <div class="modal__container-inputs">
+      <div class="modal__container">
+        <input id="lastname" type="text" class="modal__input" placeholder="Фамилия" required>
+        <label for="lastname" class="modal__label">Фамилия<span class="modal__required">*</span></label>
+      </div>
+      <div class="modal__container">
+        <input id="firstname" type="text" class="modal__input" placeholder="Имя" required>
+        <label for="firstname" class="modal__label">Имя<span class="modal__required">*</span></label>
+      </div>
+      <div class="modal__container">
+        <input id="middlename" type="text" class="modal__input" placeholder="Отчество" required>
+        <label for="middlename" class="modal__label">Отчество<span class="modal__required">*</span></label>
+      </div>
+    </div>
+
+    <div class="modal__container-selection">
+      <button class="modal__add-select-contact">
+        <img class="image__add-select-contact" src="img/svg/add-select.svg" >
+        Добавить контакт
+      </button>
+    </div>
+    <div class="modal__btn">
+      <button class="modal__btn-save">
+        Сохранить
+      </button>
+      <button class="modal__btn-delete">
+        Удалить клиента
+      </button>
+    </div>
+  </form>
+</section>
+
 </body>
 </html>
