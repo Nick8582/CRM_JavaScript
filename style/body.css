@@ -4,10 +4,13 @@
   --black: #333333;
   --text-grey: #b0b0b0;
   --border-grey: #C8C5D1;
+  --border-grey-03: #C8C5D14C;
   --purpure: #9873FF;
   --purpure-hover: #B89EFF;
   --purpure-active: #8052FF;
   --red: #F06A4D;
+  --select-background: #F4F3F6;
+  --select-background-2: #E7E5EB;
 }
 
 @font-face {
@@ -59,6 +62,7 @@ body {
   color: var(--black);
   font-family: 'Open Sans', 'sans-serif';
   position: relative;
+  overflow: hidden;
 }
 
 h1 {

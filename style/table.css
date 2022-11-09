@@ -29,6 +29,8 @@
 .table-img {
   position: relative;
   margin: auto 0;
+  margin-left: 12px;
+  font-size: 10px;
   height: 16px;
   opacity: 0.7;
   color: var(--purpure);
@@ -36,7 +38,7 @@
 
 .table-img:before {
   content: '';
-  left: -8px;
+  left: -10px;
   top: 2px;
   position: absolute;
   display: block;
@@ -53,12 +55,12 @@
 
 }
 
-.th-title.active > .table-img:before,
-.th-title.active > .table-img {
+.th-title.active .table-img:before,
+.th-title.activeW .table-img {
   opacity: 1;
 }
 
-.th-title.active > .table-img:before {
+.th-title.active .table-img:before {
   transform: rotate(0);
   top: 3px;
 }
@@ -287,5 +289,37 @@
 
   .data-create__date {
     margin-right: 7px;
+  }
+}
+
+@media (max-width: 900px) {
+  .table__id {
+    width: 10%
+  }
+  .table__fio {
+    padding-left: 6px;
+    width: 28%;
+  }
+  /*37*/
+  .table__data-create {
+    width: 15%;
+    padding-left: 18px;
+  }
+  .table-time-creation-img:before {
+    bottom: 0;
+  }
+  /*60*/
+  .table__data-edit {
+    width: 14%;
+    padding-left: 7px;
+  }
+  /*67*/
+  .table__contact {
+    width: 16%;
+    padding-left: 0;
+  }
+  .table__change {
+    width: 16%;
+    padding-left: 13px;
   }
 }
