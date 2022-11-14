@@ -22,9 +22,9 @@
   display: flex;
 }
 
-.table__title-name {
-  margin-right: 11px;
-}
+/*.table__title-name {*/
+/*  margin-right: 11px;*/
+/*}*/
 
 .table-img {
   position: relative;
@@ -146,6 +146,19 @@
   height: 16px;
   width: 16px;
   line-height: 1;
+}
+
+.contact__link-number {
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid var(--purpure);
+  font-size: 8px;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 600;
+  text-align: center;
+  line-height: 13px;
+  align-items: center;
 }
 
 .contact__item:nth-child(5n) {
@@ -303,7 +316,7 @@
   /*37*/
   .table__data-create {
     width: 15%;
-    padding-left: 18px;
+    padding-left: 21px;
   }
   .table-time-creation-img:before {
     bottom: 0;
@@ -311,15 +324,52 @@
   /*60*/
   .table__data-edit {
     width: 14%;
-    padding-left: 7px;
+    padding-left: 10px;
   }
   /*67*/
   .table__contact {
     width: 16%;
-    padding-left: 0;
+    padding-left: 6px;
   }
   .table__change {
     width: 16%;
-    padding-left: 13px;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  .change__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .change__edit,
+  .change__delete{
+    padding: 5px 15px;
+  }
+}
+
+@media (max-width: 760px) {
+  .table {
+    margin: auto 10px;
+  }
+  .table__content {
+    width: 800px;
+  }
+  .table__title {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+
+  th.table__id,
+  th.table__fio,
+  th.table__contact,
+  th.table__change {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  th.table__id,
+  th.table__fio,
+  th.table__contact,
+  th.table__change {
+    padding-top: 10px;
   }
 }
