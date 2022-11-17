@@ -24,6 +24,8 @@
   <section class="table">
     <div class="container">
       <h2 class="table__title">Клиенты</h2>
+    </div>
+    <div class="container container-mod">
       <table class="table__content" id="tableContent">
         <thead>
         <tr>
@@ -92,26 +94,31 @@
               <li class="contact__item">
                 <a href="#" class="contact__link">
                   <img src="./img/svg/vk.svg" alt="">
+                  <span class="tooltip"><span class="tooltip__href">#skvortsov</span></span>
                 </a>
               </li>
               <li class="contact__item">
                 <a href="#" class="contact__link">
                   <img src="./img/svg/fb.svg" alt="">
+                  <span class="tooltip"><span class="tooltip__href">#den_77</span></span>
                 </a>
               </li>
               <li class="contact__item">
                 <a href="#" class="contact__link">
                   <img src="./img/svg/phone.svg" alt="">
+                  <span class="tooltip"><span class="tooltip__phone">+7 (903) 404-44-44</span></span>
                 </a>
               </li>
               <li class="contact__item">
                 <a href="#" class="contact__link">
                   <img src="./img/svg/email.svg" alt="">
+                  <span class="tooltip"><span class="tooltip__href">skvortsov@mail.ru</span></span>
                 </a>
               </li>
               <li class="contact__item">
                 <a href="#" class="contact__link">
                   <img src="./img/svg/contact.svg" alt="">
+                  <span class="tooltip">Twitter: <span class="tooltip__href">@den_77</span></span>
                 </a>
               </li>
               <li class="contact__item">
@@ -341,15 +348,15 @@
         </tr>
         </tbody>
       </table>
-      <button class="table__btn-add" id="btnAdd">
-        <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="svg__add-person"
-                d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z"/>
-        </svg>
 
-        Добавить клиента
-      </button>
     </div>
+    <button class="table__btn-add" id="btnAdd">
+      <svg width="23" height="20" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="svg__add-person"
+              d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z"/>
+      </svg>
+      Добавить клиента
+    </button>
   </section>
 </main>
 
@@ -383,9 +390,9 @@
           <select class="js-choices">
             <option value="painting">Телефон</option>
             <option value="drowing">Доп. телефон</option>
-            <option value="sculpture">Email</option>
-            <option value="sculpture">Vk</option>
-            <option value="sculpture">Facebook</option>
+            <option value="email">Email</option>
+            <option value="vk">Vk</option>
+            <option value="fb">Facebook</option>
           </select>
           <input type="text" class="select__input" placeholder="Введите данные контакта">
         </div>
@@ -393,9 +400,9 @@
           <select class="js-choices">
             <option value="painting">Телефон</option>
             <option value="drowing">Доп. телефон</option>
-            <option value="sculpture">Email</option>
-            <option value="sculpture">Vk</option>
-            <option value="sculpture">Facebook</option>
+            <option value="email">Email</option>
+            <option value="vk">Vk</option>
+            <option value="fb">Facebook</option>
           </select>
           <input type="text" class="select__input" placeholder="Введите данные контакта">
         </div>

@@ -116,7 +116,7 @@ thead {
 tbody tr {
   position: relative;
   background-color: var(--white);
-  height: 58px;
+  height: 59px;
 }
 
 tbody tr:after {
@@ -140,5 +140,8 @@ tbody tr:after {
     flex-direction: column;
     overflow-x: scroll;
     position: relative;
+  }
+  .container-mod {
+    margin-bottom: 39px;
   }
 }

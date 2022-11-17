@@ -146,6 +146,54 @@
   height: 16px;
   width: 16px;
   line-height: 1;
+  position: relative;
+}
+
+.tooltip {
+  font-weight: 400;
+}
+
+.contact__link .tooltip {
+  visibility: hidden;
+  width: 133px;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  padding: 7px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -65px;
+  opacity: 0;
+  transition: visibility .3s ease, opacity .3s ease;
+}
+
+.contact__link .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.contact__link:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip__href {
+  font-weight: 700;
+  color: var(--purpure-hover);
+}
+
+.tooltip__phone {
+  font-weight: 700;
 }
 
 .contact__link-number {
@@ -174,7 +222,7 @@
 .change__delete {
   border: none;
   background: none;
-  padding: 10px 14px;
+  padding: 14px 14px 10px;
   position: relative;
   cursor: pointer;
   transition: .4s ease color;
@@ -218,12 +266,13 @@
   width: 16px;
   height: 16px;
   position: absolute;
-  left: -1px;
+  left: -4px;
+  top: 37%;
 }
 
 .change__delete:hover.change__delete:before {
   content: url("../img/svg/load-delete.svg");
-  left: -2px;
+  left: -4px;
   top: 9px;
   transform-origin: center;
   animation: rotate 2s ease-in-out infinite;
@@ -240,6 +289,12 @@
   font-family: 'Open Sans';
   padding: 12px 25px;
   transition: .3s ease-in-out background-color;
+  display: flex;
+  align-items: center;
+}
+
+.table__btn-add svg {
+  margin-right: 10px;
 }
 
 .table__btn-add:hover {
@@ -344,6 +399,13 @@
   .change__delete{
     padding: 5px 15px;
   }
+  .change__delete:before {
+    left: -1px;
+    top: 22%;
+  }
+  tbody tr {
+    height: 58px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -351,7 +413,8 @@
     margin: auto 10px;
   }
   .table__content {
-    width: 800px;
+    width: 740px;
+    margin-bottom: 0;
   }
   .table__title {
     font-size: 18px;
