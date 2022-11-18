@@ -360,7 +360,7 @@
   </section>
 </main>
 
-<section class="modal">
+<section id="createClient" class="modal">
   <form class="modal__window">
     <div class="modal__header">
       <h2 class="modal__name">Изменить данные</h2>
@@ -417,11 +417,32 @@
       <button class="modal__btn-save">
         Сохранить
       </button>
-      <button class="modal__btn-delete">
+      <button id="openDeleteModal" class="modal__btn-delete">
         Удалить клиента
       </button>
     </div>
   </form>
+</section>
+<section id="deleteClient" class="modal">
+  <div class="modal__window">
+    <div class="modal__header modal__header-delete">
+      <h2 class="modal__name modal__name-delete">Удалить клиента</h2>
+      <div class="modal__close">
+        <button class="modal__close-btn"></button>
+      </div>
+    </div>
+    <div class="modal__main-delete">
+      <p class="modal__description-delete">Вы действительно хотите удалить данного клиента?</p>
+    </div>
+    <div class="modal__btn">
+      <button class="modal__btn-save modal__btn-deleteOk">
+        Удалить
+      </button>
+      <button id="cancelDeleteModal" class="modal__btn-delete">
+        Отмена
+      </button>
+    </div>
+  </div>
 </section>
 
 <script src="js/activeBtn.js"></script>

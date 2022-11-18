@@ -430,6 +430,30 @@
 .select__list:not(:last-child) {
   margin-bottom: 15px;
 }
+.modal__header-delete {
+  justify-content: center;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+.modal__name-delete {
+  letter-spacing: 0;
+  margin-right: 20px;
+}
+.modal__main-delete {
+  padding: 0 30px;
+  display: flex;
+  margin: 0 auto;
+}
+.modal__main-delete {
+  max-width: 275px;
+}
+.modal__description-delete {
+  text-align: center;
+}
+.modal__btn-deleteOk {
+  padding: 14px;
+  max-width: 130px;
+}
 
 @media (max-width: 460px) {
   .modal__window {
@@ -471,5 +495,8 @@
   }
   .modal__btn {
     padding-bottom: 20px;
+  }
+  .modal__header-delete {
+    padding: 0;
   }
 }
