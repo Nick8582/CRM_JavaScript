@@ -420,7 +420,10 @@
     font-size: 18px;
     margin-bottom: 0;
   }
-
+  .change__edit:hover.change__edit:before,
+  .change__delete:hover.change__delete:before{
+    top: 5px;
+  }
 
   th.table__id,
   th.table__fio,
