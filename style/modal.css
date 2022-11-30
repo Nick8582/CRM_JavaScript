@@ -41,12 +41,11 @@
 }
 
 .modal__window {
-  margin: 0;
+  margin: 0 -50% 0 0;
   background: var(--white);
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
   z-index: 3;
   max-width: 450px;
@@ -86,6 +85,7 @@
   height: 29px;
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 .modal__close-btn:before {
@@ -114,10 +114,9 @@
 
 .modal__container {
   position: relative;
-  padding: 0 30px;
+  padding: 0 30px 10px 30px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 10px;
   margin-bottom: 23px;
 }
 
@@ -144,10 +143,9 @@
   outline: none;
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   line-height: 19px;
-  padding: 0;
-  padding-bottom: 4px;
+  padding: 0 0 4px 0;
   border-bottom: 1px solid var(--black);
 }
 
@@ -326,7 +324,7 @@
 
 .is-focused .fillter-choices__inner,
 .is-open .fillter-choices__inner {
-  background-color: var(--white-transparent-2);
+  background-color: var(--border-grey);
 }
 
 .is-open .fillter-choices__inner {
@@ -351,7 +349,7 @@
 .fillter-choices__list--dropdown,
 .fillter-choices__list[aria-expanded] {
   visibility: hidden;
-  z-index: 1;
+  z-index: 3;
   position: absolute;
   width: 100%;
   border: 1px solid var(--border-grey);
@@ -382,7 +380,7 @@
 .fillter-choices__list[aria-expanded] .fillter-choices__item {
   position: relative;
   padding: 12px 15px;
-  color: var(--wgrey-color);
+  color: var(--black);
 }
 
 .fillter-choices__list--dropdown .fillter-choices__item.is-selected {
@@ -391,7 +389,7 @@
 
 .fillter-choices__list--dropdown .fillter-choices__item--selectable.is-highlighted,
 .fillter-choices__list[aria-expanded] .fillter-choices__item--selectable.is-highlighted {
-  background-color: var(--white-transparent-2);
+  background-color: var(--border-grey);
 }
 
 .fillter-choices__item {
@@ -413,7 +411,7 @@
   box-sizing: border-box;
   width: 68%;
   padding: 6px 9px;
-  border-radius: 0px;
+  border-radius: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;

@@ -243,7 +243,7 @@
 .change__edit:hover.change__edit:before {
   content: url("../img/svg/load-edit.svg");
   left: -2px;
-  top: 9px;
+  top: 14px;
   transform-origin: center;
   animation: rotate 2s ease-in-out infinite;
 }
@@ -273,7 +273,7 @@
 .change__delete:hover.change__delete:before {
   content: url("../img/svg/load-delete.svg");
   left: -4px;
-  top: 9px;
+  top: 14px;
   transform-origin: center;
   animation: rotate 2s ease-in-out infinite;
 }
@@ -331,6 +331,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.table__col-load h2{
+  margin-bottom: 10px;
 }
 
 .loader {
