@@ -44,7 +44,7 @@
   margin: 0 -50% 0 0;
   background: var(--white);
   position: absolute;
-  top: 50%;
+  /*top: 50%;*/
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
@@ -236,6 +236,8 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: 25px;
+  max-height: 110px;
+  overflow-x: auto;
 }
 
 .select__list {
@@ -425,6 +427,40 @@
   line-height: 19px;
 }
 
+.select__list {
+  position: relative;
+}
+
+.select__btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0;
+  border: 1px solid var(--border-grey);
+  background-color: var(--select-background);
+  max-width: 27px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.select__btn-delete::before {
+  content: '';
+  background-image: url("../img/svg/delete-grey.svg");
+  position: absolute;
+  right: 6px;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  margin-top: -5px;
+  transition: background-image .5s ease;
+}
+
+.select__btn-delete:hover:before,
+.select__btn-delete:active:before{
+  background-image: url("../img/svg/delete.svg");
+}
+
 .select__list:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -451,6 +487,13 @@
 .modal__btn-deleteOk {
   padding: 14px;
   max-width: 130px;
+}
+
+@media (max-height: 624px) {
+  .modal__window {
+    margin: 0;
+    top: 62%;
+  }
 }
 
 @media (max-width: 460px) {

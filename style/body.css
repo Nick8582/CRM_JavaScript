@@ -126,6 +126,12 @@ tbody tr:after {
   border-bottom: 1px solid var(--border-grey);
 }
 
+@media (max-height: 634px) {
+  body {
+    overflow: auto;
+  }
+}
+
 @media (max-width: 1120px) {
   .container {
     padding: 0;
