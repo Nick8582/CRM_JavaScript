@@ -4,7 +4,7 @@
   transition: opacity .3s ease-in-out, display .3s ease-in-out;
 }
 
-.modal::after {
+.modal__shadow {
   content: '';
   position: fixed;
   z-index: 2;
